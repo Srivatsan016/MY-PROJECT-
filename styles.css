@@ -1,0 +1,44 @@
+
+:root{
+  --saffron:#FF9933;
+  --maroon:#6B1A1A;
+  --gold:#D4AF37;
+  --bg:#F8F6F2;
+  --text:#222;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--maroon);text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
+.nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.brand{font-weight:800;color:var(--maroon);letter-spacing:.5px}
+nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+.cta{background:var(--saffron);color:#111;padding:10px 14px;border-radius:10px;font-weight:700}
+.lang-toggle{background:#eee;border-radius:10px;padding:6px 10px;cursor:pointer}
+.hero{max-width:1100px;margin:20px auto;padding:16px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.hero-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero h1{font-family:'Merriweather',serif;font-size:2rem;margin:.2rem 0;color:var(--maroon)}
+.badge{display:inline-block;background:#fff6ea;color:#8a5600;border:1px solid #ffd7a1;padding:6px 10px;border-radius:999px;font-size:.9rem;margin-bottom:8px}
+.btn{display:inline-block;margin-top:8px;background:var(--maroon);color:#fff;padding:10px 14px;border-radius:10px}
+.section{max-width:1100px;margin:0 auto;padding:8px 16px 28px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.card h3{margin:.3rem 0;color:var(--maroon)}
+.small{font-size:.95rem;color:#444}
+.footer{background:#111;color:#ccc;padding:24px 16px;margin-top:30px}
+.footer a{color:#ddd}
+label{display:block;font-size:.95rem;margin:6px 0 4px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:10px;background:#fff}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  form .row{grid-template-columns:1fr}
+}
+.accordion details{background:#fff;border-radius:10px;padding:10px;margin-bottom:8px;border:1px solid #eee}
+.gallery{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.gallery figure{margin:0;background:#fff;border:1px solid #eee;border-radius:10px;overflow:hidden}
+.gallery img{width:100%;display:block}
+.kicker{color:#555}
+.service-pill{background:#fff0e6;border:1px solid #ffd0a3;color:#8a5600;padding:4px 10px;border-radius:999px;font-size:.85rem;display:inline-block;margin:3px 5px 0 0}
+hr{border:0;border-top:1px solid #eee;margin:14px 0}

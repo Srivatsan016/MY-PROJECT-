@@ -1,0 +1,215 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ganapathy Progitham — Book Hindu Poojas Online</title>
+  <meta name="description" content="Book trusted Hindu poojas with Hindu Progithar Sri Ganapathy. Thithi, Ganapathy Homam, Marriage, Navagraha, Lakshmi Pooja and more. Call/WhatsApp +91 9080111700.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>h1,h2,h3{font-family:'Merriweather',serif}</style>
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Ganapathy Progitham",
+    "telephone":"+91 9080111700",
+    "areaServed":{"@type":"City","name":"Chennai"},
+    "description":"Book trusted Hindu poojas with Hindu Progithar Sri Ganapathy.",
+    "url":"https://example.com",
+    "sameAs":[],
+    "image":"assets/hero.svg",
+    "address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"TN","addressCountry":"IN"},
+    "openingHours":["Mo-Su 06:00-21:00"],
+    "makesOffer":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Thithi (Shraddha)","areaServed":"Chennai"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ganapathy Homam","areaServed":"Chennai"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Marriage/Muhurtham","areaServed":"Chennai"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header id="sec0">
+  <div class="nav">
+    <div class="brand">Ganapathy Progitham</div>
+    <nav>
+      <ul id="navlinks"></ul>
+    </nav>
+    <div>
+      <button id="lang_en" class="lang-toggle">EN</button>
+      <button id="lang_ta" class="lang-toggle">TA</button>
+      <a class="cta" href="tel:+919080111700">+91 9080111700</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-card">
+    <span id="hero_badge" class="badge">Authentic Vedic rituals performed with care</span>
+    <h1 id="hero_h1">Book Trusted Hindu Poojas in Minutes</h1>
+    <p id="hero_p">From Ganapathy Homam to Marriage Muhurtham — book trusted priests in minutes.</p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn" id="hero_book" href="#sec1">Book a Pooja</a>
+      <a class="cta" id="hero_call" href="https://wa.me/919080111700" target="_blank" rel="noopener">Call/WhatsApp: +91 9080111700</a>
+    </div>
+    <hr>
+    <div id="highlights"></div>
+  </div>
+  <div class="hero-card">
+    <img src="ganesha-puja-663686_l.jpg" alt="Lord Ganesha — devotional hero image" style="width:100%;border-radius:12px">
+  </div>
+</section>
+
+<section class="section" id="sec2">
+  <h2 id="services_h2">Popular Poojas</h2>
+  <img src="Laxmi-Puja_1.webp"alt="LORD LAXMI"style="width:75%;border-radius:10px">
+  <div id="services" class="services-grid"></div>
+
+</section>
+
+<section class="section" id="sec1">
+  <h2 id="book_h2">Book a Pooja</h2>
+  <div class="card">
+    <form id="bookForm" aria-label="Book a Pooja">
+      <div class="row">
+        <div>
+          <label for="pooja">Select Pooja</label>
+          <select id="pooja" name="pooja" required>
+            <option > (Śrāddha)></option><option>Ganapathy Homam</option><option >Marriage / Muhurtham</option>
+            <option>Ayushya Homam</option><option>Navagraha Homam</option><option>Lakshmi Pooja</option>
+            <option>Satyanarayan Pooja</option><option>Gruhapravesam</option><option>Vastu Shanti</option>
+            <option>Car Pooja</option><option>Annaprashan</option><option>Naming Ceremony</option>
+            <option>Upanayanam</option><option>Sudarshana Homam</option><option>Chandi Homam</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="time">Time</label>
+          <input id="time" name="time" type="time" required>
+        </div>
+        <div>
+          <label for="location">Location</label>
+          <select id="location" name="location">
+            <option>Home</option><option>Temple</option><option>Online</option>
+          </select>
+        </div>
+      </div>
+      <label for="address">Address / Landmark</label>
+      <input id="address" name="address" placeholder="Flat no, street, area, city">
+      <fieldset style="border:1px solid #eee;border-radius:10px;padding:12px;margin-top:10px">
+        <legend id="detailsLegend">Devotee Details</legend>
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+          </div>
+          <div>
+            <label for="nak">Nakshatra</label>
+            <input id="nak" name="nak">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="goth">Gothram</label>
+            <input id="goth" name="goth">
+          </div>
+          <div>
+            <label for="priests"># of Priests</label>
+            <input id="priests" name="priests" type="number" min="1" value="1">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="materials">Materials</label>
+            <select id="materials" name="materials">
+              <option>Client provides</option><option>We bring</option>
+            </select>
+          </div>
+          <div>
+            <label for="notes">Notes</label>
+            <input id="notes" name="notes" placeholder="Any specific sankalpam / instructions">
+          </div>
+        </div>
+      </fieldset>
+      <p id="altpay" class="small">or Pay Advance via UPI (GPay/Paytm) after confirmation</p>
+      <button id="submitBtn" class="btn" type="submit">Confirm Booking (COD)</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="sec4">
+  <h2 id="gallery_h2">Gallery</h2>
+  <div class="gallery">
+    <figure><img src="ganesha-puja-663686_l.jpg" alt="Lord Ganesha devotional image"><figcaption class="small" style="padding:8px">Lord Ganesha</figcaption></figure>
+    <figure><img src="Laxmi-Puja_1.webp" alt="Lakshmi pooja setup"><figcaption class="small" style="padding:8px">Lakshmi Pooja Setup</figcaption></figure>
+    <figure><img src="Navagraha_AstroBhava.com_.webp" alt="Navagraha homam fire altar"><figcaption class="small" style="padding:8px">Navagraha Homam</figcaption></figure>
+    <figure><img src="Marriage-Puja.png" alt="Marriage mandap"><figcaption class="small" style="padding:8px">Marriage Mandap</figcaption></figure>
+  </div>
+</section>
+
+<section class="section" id="sec5">
+  <h2 id="about_h2">About Hindu Progithar Ganapathy</h2>
+  <div class="card">
+    <p id="about_p">Hindu Progithar  Ganapathy with 5+ years of experience conducting homams & poojas. Languages: Tamil, English, Sanskrit. Service across Chennai & suburbs.</p>
+  </div>
+</section>
+
+<section class="section" id="sec6">
+  <h2 id="contact_h2">Contact</h2>
+  <div class="card">
+    <p id="contact_line1">For urgent poojas, call or WhatsApp</p>
+    <p><a id="contact_phone" class="btn" href="tel:+919080111700">+91 9080111700</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 id="faq_h2">FAQs</h2>
+  <div id="faqs" class="accordion"></div>
+</section>
+
+<footer class="footer">
+  <div style="max-width:1100px;margin:0 auto;display:grid;gap:16px;grid-template-columns:1fr 1fr 1fr">
+    <div>
+      <div class="brand" style="color:#fff">Ganapathy Progitham</div>
+      <p class="small">Certified Vedic priests • Transparent pricing • Service across Chennai • Tamil/English support</p>
+    </div>
+    <div>
+      <h3 style="margin:.3rem 0;color:#fff">Services</h3>
+      <p class="small">Thithi, Ganapathy Homam, Marriage, Ayushya Homam, Navagraha, Lakshmi, Satyanarayan, Gruhapravesam, Vastu, Car Pooja, Annaprashan, Naming, Upanayanam, Sudarshana, Chandi</p>
+    </div>
+    <div>
+      <h3 style="margin:.3rem 0;color:#fff">Contact</h3>
+      <p class="small"><a href="tel:+919080111700">+91 9080111700</a></p>
+      <p class="small"><a href="https://wa.me/919080111700" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+  </div>
+  <div style="max-width:1100px;margin:10px auto 0;border-top:1px solid #333;padding-top:10px" class="small">
+    © <span id="year"></span> Ganapathy Progitham • All rights reserved • <a href="#">Terms</a> • <a href="#">Privacy</a> • <a href="#">Cancellation</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
